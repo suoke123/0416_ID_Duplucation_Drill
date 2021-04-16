@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>회원가입</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </head>
-<body>
 
-   <div id="wrap">
+<body>
+    <div id="wrap">
+
         <form action="https://www.daum.net">
+
             <header id="header">
                 <h1>회원가입</h1>
-                <div>(점검용 가입 ID : test01, guest, member03)</div>
+                <div>(점검용 가입ID : test01, guest, member03)</div>
             </header>
 
+
+            <!--ul>li*4>span*2-->
             <ul>
                 <li>
                     <span>ID</span>
@@ -26,21 +31,27 @@
                 <li>
                     <span>비밀번호</span>
                     <span>
-                        <input type="password" maxlength="20">
+                        <input type="password" name="uPW" maxlength="20" class="uPW" id="uPW">
+                        <input type="checkbox">
+                        <span>비밀번호 보기</span>
                     </span>
                 </li>
                 <li>
                     <span>비밀번호확인</span>
                     <span>
-                        <input type="password" maxlength="20">
+                        <input type="password" maxlength="20" class="uPW"
+                        id="uPW_Re">
                     </span>
                 </li>
                 <li>
                     <button type="reset">입력취소</button>
                     <button type="button">가입하기</button>
                 </li>
-        </ul>
+            </ul>
+
         </form>
-   </div>
+
+    </div> <!-- div#wrap -->
 </body>
+
 </html>
